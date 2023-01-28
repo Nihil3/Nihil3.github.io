@@ -1,0 +1,155 @@
+body {
+  font-family: 'Inconsolata', monospace;
+  /* padding-top: 10px; */
+}
+
+html {
+  scroll-padding-top: 70px; /* height of sticky header */
+}
+
+/* Main */
+.matrix {
+  color: greenyellow;
+}
+#Mainsection {
+  background-image: url('../img/bgmain.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: left;
+}
+
+/* Mis trabajos */
+
+/* Contacto */
+
+#Contacto form label {
+  font-weight: 700;
+  color: greenyellow;
+}
+
+@media (max-width: 768px) {
+  #Contacto form label {
+    font-weight: 400;
+  }
+
+  .navbar-brand {
+    width: 100px;
+  }
+}
+
+#Portafolio {
+  width: 100%;
+}
+#Portafolio .card-img-top {
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+@property --rotate {
+  syntax: '<angle>';
+  initial-value: 132deg;
+  inherits: false;
+}
+
+:root {
+  --card-height: 400px;
+  /* --card-width: calc(var(--card-height) / 1.5); */
+}
+
+/*body {
+  min-height: 100vh;
+  background: #212534;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  box-sizing: border-box;
+}*/
+
+.card {
+  background: #191c29;
+  /* width: var(--card-width); */
+  height: var(--card-height);
+  padding: 8px;
+  position: relative;
+  border-radius: 20px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  display: flex;
+  color: rgb(88 199 250 / 0%);
+  font-family: 'Inconsolata', monospace;
+}
+
+.card:hover::before {
+  content: '';
+  width: 104%;
+  height: 102%;
+  border-radius: 20px;
+  background-image: linear-gradient(
+    var(--rotate),
+    #06f7f7,
+    #04d415 43%,
+    #e1fa02
+  );
+  position: absolute;
+  z-index: -1;
+  top: -1%;
+  left: -2%;
+  animation: spin 2.5s linear infinite;
+}
+
+.card::after {
+  position: absolute;
+  content: '';
+  top: calc(var(--card-height) / 6);
+  left: 0;
+  right: 0;
+  z-index: -1;
+  height: 100%;
+  width: 100%;
+  margin: 0 auto;
+  transform: scale(0.8);
+  filter: blur(calc(var(--card-height) / 6));
+  background-image: linear-gradient(var(--rotate), #fff, #ccc 43%, #333);
+  opacity: 1;
+  transition: opacity 0.5s;
+}
+
+.card:hover::after {
+  position: absolute;
+  content: '';
+  top: calc(var(--card-height) / 6);
+  left: 0;
+  right: 0;
+  z-index: -1;
+  height: 100%;
+  width: 100%;
+  margin: 0 auto;
+  transform: scale(0.8);
+  filter: blur(calc(var(--card-height) / 6));
+  background-image: linear-gradient(
+    var(--rotate),
+    #06f7f7,
+    #04d415 43%,
+    #e1fa02
+  );
+  opacity: 1;
+  transition: opacity 0.5s;
+  animation: spin 2.5s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    --rotate: 0deg;
+  }
+  100% {
+    --rotate: 360deg;
+  }
+}
+
+a {
+  color: #212534;
+  text-decoration: none;
+}

@@ -1,0 +1,97 @@
+body {
+  background-image: url('../img/bground3.jpg');
+  background-color: #000000;
+  background-size: cover;
+  position: absolute;
+  margin: 0;
+}
+
+.headerbanner {
+  position: relative;
+  height: auto;
+  width: auto;
+  padding: 5rem;
+  font-size: 3em;
+  background-image: url('../img/Banner2.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.headertext {
+  position: relative;
+  text-align: right;
+  margin-top: auto;
+  margin-right: 9rem;
+  text-rendering: auto;
+  color: #e1fcfd;
+  font-style: normal;
+  font-weight: lighter;
+}
+
+.products {
+  width: 50%;
+  margin: auto;
+}
+
+.products td {
+  width: 70%;
+  padding: 2em;
+}
+
+.products img {
+  width: 100%;
+  border: solid 1px rgb(17, 0, 255);
+}
+
+h2 {
+  text-align: center;
+  text-rendering: auto;
+  color: #e1fcfd;
+  font-style: italic;
+  font-weight: lighter;
+}
+
+p {
+  color: aliceblue;
+  text-align: center;
+}
+
+footer {
+  position: absolute;
+  height: auto;
+  width: auto;
+  display: flex;
+  justify-content: center;
+  padding: 1mm;
+  background-color: #02a6ac;
+  color: #fff;
+}
+
+element.style {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-content: space-around;
+  justify-content: flex-end;
+  align-items: stretch;
+}
+/* 
+article {
+  min-height: 100%;
+  margin: auto 0;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+} */
+
+footer {
+  background-color: black;
+  color: aliceblue;
+  text-align: center;
+  font-weight: lighter;
+  margin-block-end: auto;
+}
+
+.gif {
+  background-image: url('../img/spin-1.gif');
+}

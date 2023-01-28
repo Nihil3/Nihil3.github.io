@@ -1,15 +1,221 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Repositorio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/1cdadde4f7.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <title>CurriculumVitae</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 
-<body>
+<body class="bg-black text-light ">
 
+
+
+    <nav class="navbar navbar-expand-lg bg-dark fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img src="assets/img/logo.png" class="img-fluid" alt="Logo"></a>
+            <button class="navbar-toggler bg-warning" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <!-- <li class="nav-item">
+                        <a class="nav-link active text-light" aria-current="page" href="#"></a> -->
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="#Who?">Quien soy?</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="#Portafolio">Portafolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="#Contacto">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <header id="Mainsection" class="text-light text-end py-5 mt-5">
+        <div class="container">
+            <div class="ms-auto col-12 col-md-7 ">
+                <h1 class="display-1 fw-bolder my-5">
+                    Desarrollador <br> Fullstack
+                </h1>
+                <p class="my-5 text-warning fs-1 "> Html+Css+Javascript
+                </p>
+                <div class="mb-5 pb-5">
+                    <a href="https://github.com/Nihil3" target="_blank"
+                        class="btn btn-lg btn-outline-info text-light me-4" role="button" aria-pressed="true">Github</a>
+                    <a href="https://www.linkedin.com/in/pcripperdoc/" target="_blank"
+                        class="btn btn-lg btn-outline-success text-light" role="button" aria-pressed="true">Linkedin</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="Who?" class="container-fluid text-center my-5">
+
+
+        <h2 class="display-3 fw-bold my-4">Quien soy?</h2>
+
+        <p class="my-4">
+            Mi nombre es Elias Sepulveda, soy un joven desarrollador de 23 años, apasionado videojugador y amante de las
+            computadoras, paso mi tiempo
+            aprendiendo
+            y disfrutando de las maravillas de la tecnologia digital.
+        </p>
+
+
+        <div class="row">
+            <div class="col-12 col-md-4">
+                <i class="far fas fa-laptop fa-3x my-3 matrix"></i>
+                <h3 class="my-3 fw-bold">Servicio tecnico</h3>
+                <p class="my-3">
+                    Autodidacta, PC y Notebooks
+                    <br> Diagnosticos
+                    <br> Cotizaciones
+                    <br> Montaje
+                    <br> Mantenimientos
+                </p>
+            </div>
+            <div class="col-12 col-md-4">
+                <i class="fas fa-terminal fa-3x my-3 matrix"></i>
+                <h3 class="my-3 fw-bold">Desarrollo web</h3>
+                <p class="my-3">
+                    Continuamente aprendiendo las maravillas de los lenguajes de programacion, siendo capaz de llevar a
+                    cabo proyectos completos, limpios y sostenibles.
+                </p>
+            </div>
+            <div class="col-12 col-md-4">
+                <i class="fas fa-glasses fa-3x my-3 matrix"></i>
+                <h3 class="my-3 fw-bold">Blogger</h3>
+                <p class="my-3">
+                    Hosteo mi propio Blog personal, cubriendo areas de mi interes, como videojuegos y registros
+                    paranormales.
+                </p>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="Portafolio" class="my-5 p-5 bg-black bg-gradient bg-opacity-75">
+
+        <h2 class="display-4 fw-bold text-center mb-3">Portafolio</h2>
+
+
+        <div class="container-fluid pt-4 p-lg-5">
+            <div class="row">
+
+                <div class="col-lg-3 col-md-6 col-sm-12 mb-5">
+                    <a href="assets/files/landing_page/Index.html" target="_blank">
+                        <div class="card bg-dark text-warning">
+                            <img src="assets/img/card-1.jpg" class="card-img-top" alt="landingpage">
+                            <div class="card-body ">
+                                <h5 class="card-title fw-bolder">Landing Page</h5>
+                                <p class="fs-7 text-warning ">"Desafio 1"</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12 mb-5">
+                    <a href="assets/files/bootstrap/index.html" target="_blank">
+                        <div class="card bg-dark">
+                            <img src="assets/img/card-2.jpg" class="card-img-top" alt="landingpage">
+                            <div class="card-body ">
+                                <h5 class="card-title fw-bolder text-warning">Landing Page</h5>
+                                <p class="fs-7 text-warning ">"Desafio 2"</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12 mb-5">
+                    <a href="assets/files/iguana_page/Index.html" target="_blank">
+                        <div class="card bg-dark text-warning">
+                            <img src="assets/img/card-3.jpg" class="card-img-top" alt="landingpage">
+                            <div class="card-body ">
+                                <h5 class="card-title fw-bolder">Iguana Page</h5>
+                                <p class="fs-7 text-warning ">"Desafio 3"</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12 mb-5">
+                    <a href="assets/files/iguana_page/Index.html" target="_blank">
+                        <div class="card bg-dark text-warning">
+                            <img src="assets/img/card-4.jpg" class="card-img-top" alt="hero">
+                            <div class="card-body ">
+                                <h5 class="card-title fw-bolder">Hero</h5>
+                                <p class="fs-7 text-warning ">"Desafio 4"</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+            </div>
+    </section>
+
+
+
+    <section id="Contacto" class="container-fluid my-5">
+
+        <h2 class="display-4 fw-bold text-center my-4">Contacto</h2>
+
+        <p class="text-center my-4 d-none d-md-block"> Puedes escribirme un
+            mensaje abajo y este llegará directo a mi correo!
+        </p>
+        <div class="container text-center my-5">
+
+            <form>
+
+
+                <div class="form-group mb-4">
+                    <label class="mb-2">Nombre</label>
+                    <input class="form-control" placeholder="Nombre">
+                </div>
+
+                <div class="form-group mb-4">
+                    <label class="mb-2">Correo electrónico</label>
+                    <input class="form-control" placeholder="Correo electrónico" />
+                </div>
+
+
+                <div class="form-group">
+                    <label class="mb-2">Mensaje</label>
+                    <textarea class="form-control" placeholder="Escribe aquí tu mensaje"></textarea>
+                </div>
+
+                <div class="my-3 text-end">
+                    <a href="https://www.youtube.com/watch?v=mCdA4bJAGGk" target="_blank"
+                        class="btn btn-outline-success text-light" role="button" aria-pressed="false">Enviar</a>
+                    <!-- perdon xD -->
+                </div>
+
+
+
+            </form>
+
+    </section>
+
+
+
+    <footer class="bg-dark text-center text-light p-4">
+        <p class="mb-0">Elias Sepulveda 2023. Todos los derechos reservados.</p>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
